@@ -1,0 +1,40 @@
+.stripe-0 {
+    background: repeating-linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.025),
+            rgba(0, 0, 0, 0.025) 10px,
+            rgba(0, 0, 0, 0.05) 10px,
+            rgba(0, 0, 0, 0.05) 20px
+    )
+}
+.stripe-3 {
+    background: repeating-linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.05) 10px,
+            rgba(0, 0, 0, 0.1) 10px,
+            rgba(0, 0, 0, 0.1) 20px
+    ),
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+}
+.stripe-7 {
+     color: white;
+     background: repeating-radial-gradient(
+             circle,
+             purple,
+             purple 10px,
+             #4b026f 10px,
+             #4b026f 20px
+     );
+ }
+
+.stripe-8 {
+    color: white;
+    background: repeating-radial-gradient(
+            circle,
+            lightgray,
+            lightgray 10px,
+            #ccc 10px,
+            #ccc 20px
+    );
+}

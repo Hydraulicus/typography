@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="author" content="Alexei Zababurin"/>
+    <meta name="description" content="Typography Design Generator"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gradients.css">
+    <style>
+        @font-face {
+            font-family: 'avenir';
+            src: url("fonts/avenir-medium.woff") format("woff"), url("fonts/avenirltstd-medium.otf") format("otf");
+            font-weight: normal;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'GothamPro-Bold';
+            src: url('fonts/GothamProBold/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/GothamProBold/GothamPro-Bold.otf')  format('opentype'),
+                url('fonts/GothamProBold/GothamPro-Bold.woff') format('woff'), url('fonts/GothamProBold/GothamPro-Bold.ttf')  format('truetype'),
+                url('fonts/GothamProBold/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'greatvibes';
+            src: url("fonts/greatvibes-regular.woff") format("woff"), url("fonts/greatvibes-regular.otf") format("otf");
+            font-weight: normal;
+            font-style: normal; }
+    </style>
+</head>
+<body>
+    <div class="main_flex main_wrapper stripe-0">
+        <textarea class="textarea__" rows="5" cols="41" name="text" autofocus maxlength="100" ></textarea>
+        <div class="button_wrapper flex_container">
+            <button id="styleit" disabled>Style it!</button>
+            <button id="refont">Refont!</button>
+        </div>
+        <div id="output__area" class="svg_wrapper stripe-8">
+            <div id="pattern" class="patterns__place" style="display: block">
+                <svg id="pattern_svg" width="100%" height="100%" preserveAspectRatio="none" style="">
+                </svg>
+            </div>
+        </div>
+        <div id="status__bar" class="status__bar"><span></span></div>
+    </div>
+
+<script src="js/snap.svg-min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/common.js"></script>
+<script src="js/PATTERN__MODE__PROCESSOR.js"></script>
+<script src="js/I__MODE__PROCESSOR.js"></script>
+<script type="text/javascript">
+    initAnimation({ output : "#output_text"
+        ,fonts : [ "GothamPro-Bold", "greatvibes", "avenir"]
+        ,path2patterns: "patterns/"
+        ,patterns : ["pattern0.svg", "pattern1.svg", "pattern2.svg", "i__mode0.svg"]
+        ,init_text : "IMAGINATION is more important than KNOWLEDGE"
+    });
+</script>
+</body>
+</html>
